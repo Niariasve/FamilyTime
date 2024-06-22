@@ -1,0 +1,26 @@
+{
+  "name": "familytime",
+  "version": "1.0.0",
+  "description": "Family Time App Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/scss:build/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/Niariasve/FamilyTime"
+  },
+  "keywords": [
+    "Family",
+    "Album",
+    "SASS",
+    "Reunion",
+    "Union"
+  ],
+  "author": "Néstor Arias Velásquez",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.6"
+  }
+}
