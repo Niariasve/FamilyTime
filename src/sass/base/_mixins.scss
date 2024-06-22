@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+
+/* Media Queries */
+
+@mixin small {
+    @media(min-width: v.$small) {
+        @content
+    }
+}
+
+@mixin medimum {
+    @media(min-width: v.$medimum) {
+        @content
+    }
+}
+
+@mixin large {
+    @media(min-width: v.$large) {
+        @content
+    }
+}
+
+@mixin xl {
+    @media(min-width: v.$xl) {
+        @content
+    }
+}
+
+/* Grid */
+
+@mixin grid($columns, $spacing) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $spacing;
+}
