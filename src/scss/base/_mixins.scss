@@ -4,25 +4,25 @@
 
 @mixin small {
     @media(min-width: v.$small) {
-        @content
+        @content;
     }
 }
 
-@mixin medimum {
-    @media(min-width: v.$medimum) {
-        @content
+@mixin medium {
+    @media(min-width: v.$medium) {
+        @content;
     }
 }
 
 @mixin large {
     @media(min-width: v.$large) {
-        @content
+        @content;
     }
 }
 
 @mixin xl {
     @media(min-width: v.$xl) {
-        @content
+        @content;
     }
 }
 

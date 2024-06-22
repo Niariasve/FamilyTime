@@ -334,7 +334,6 @@ p {
 }
 
 .contenedor {
-  width: 95%;
   max-width: 120rem;
   margin: 0 auto;
 }
@@ -344,7 +343,7 @@ a {
 }
 
 h1, h2, h3 {
-  margin: 0 0 5rem 0;
+  margin: 0 0 2.5rem 0;
 }
 
 h1 {
@@ -364,6 +363,80 @@ img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.header {
+  padding: 2rem 0;
+  background-color: #71c4ef;
+}
+.header .home {
+  text-align: center;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .header .home h1 {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  .header .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .izq {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 2rem;
+  }
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .navegacion {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2.5rem;
+  }
+}
+.navegacion a {
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: 700;
+}
+.navegacion a:hover {
+  background-color: #00668c;
+  border-radius: 1rem;
+}
+
+.auth {
+  display: none;
+  background-color: #00668c;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  transition: scale 0.3s ease;
+}
+@media (min-width: 768px) {
+  .auth {
+    display: block;
+  }
+}
+.auth a {
+  color: #fff;
+  padding: 2rem;
+  font-weight: 700;
+}
+.auth:hover {
+  scale: 1.05;
 }
 
 /*# sourceMappingURL=app.css.map */
