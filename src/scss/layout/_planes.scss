@@ -2,7 +2,9 @@
 @use '../base/mixins' as m;
 
 .card-group {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @include m.medium {
         @include m.grid(2, 4rem);

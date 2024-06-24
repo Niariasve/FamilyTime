@@ -1,0 +1,12 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.producto-section {
+    background-color: v.$primary-200;
+    padding: 5rem;
+    margin-top: 0;
+
+    h2 {
+        color: v.$bg-200
+    }
+}
