@@ -1,0 +1,59 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.form-control-lg {
+    font-size: 1.8rem;
+}
+
+.form-section {
+    background-color: v.$primary-200;
+    padding: 4rem;
+}
+
+.form-container {
+    width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid v.$black;
+    border-radius: 3rem;
+    background-color: v.$bg-200;
+
+    .form-select {
+        font-size: 1.8rem;
+    }
+
+    option {
+        font-size: 1.5rem;
+    }
+
+    input {
+        font-size: 1.8rem;
+        width: 100%;
+    }
+}
+
+#alertas {
+
+    .alerta {
+        text-align: center;
+        border: 1px solid v.$black;
+        margin-bottom: 1rem;
+        border-radius: 1.5rem;
+
+        p {
+            font-size: 1.6rem;
+            margin: 0;
+            padding: 1rem 0;
+            font-weight: bold;
+            color: v.$white;
+        }
+
+        &.error {
+            background-color: red;
+        }
+
+        &.exito {
+            background-color: green;
+        }
+    }
+}
