@@ -127,8 +127,62 @@ img {
   padding: 5rem;
   margin-top: 0;
 }
-.producto-section h2 {
-  color: #f5f5f5;
+
+.producto-imagen {
+  display: grid;
+  justify-items: center;
+}
+@media (min-width: 768px) {
+  .producto-imagen {
+    justify-items: end;
+  }
+}
+.producto-imagen img {
+  background-repeat: no-repeat;
+  height: auto;
+  width: 95%;
+}
+
+@media (min-width: 768px) {
+  .producto-texto .producto-lista {
+    display: flex;
+    column-gap: 2rem;
+  }
+}
+.producto-texto ul li {
+  font-size: 2rem;
+}
+
+.producto-imagen-rv {
+  display: grid;
+  justify-items: center;
+}
+@media (min-width: 768px) {
+  .producto-imagen-rv {
+    justify-items: start;
+  }
+}
+.producto-imagen-rv img {
+  background-repeat: no-repeat;
+  height: auto;
+  width: 95%;
+  z-index: 10;
+  position: relative;
+}
+
+.separator {
+  position: relative;
+  padding-bottom: 2rem;
+}
+.separator:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background-color: #FFFFFF;
 }
 
 .card-group {

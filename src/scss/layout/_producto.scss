@@ -5,8 +5,71 @@
     background-color: v.$primary-200;
     padding: 5rem;
     margin-top: 0;
+}
 
-    h2 {
-        color: v.$bg-200
+.producto-imagen {
+    display: grid;
+    justify-items: center;
+
+    @include m.medium {
+        justify-items: end;
+    }
+
+    img {
+        background-repeat: no-repeat;
+        height: auto;
+        width: 95%;
+    }
+}
+
+.producto-texto {
+    .producto-lista {
+        @include m.medium {
+            display: flex;
+            column-gap: 2rem;
+        }
+    }
+    ul {
+        li {
+            font-size: 2rem;
+        }
+    }
+}
+
+.producto-imagen-rv {
+    display: grid;
+    justify-items: center;
+
+    @include m.medium {
+        justify-items: start;
+    }
+
+    img {
+        background-repeat: no-repeat;
+        height: auto;
+        width: 95%;
+        z-index: 10;
+        position: relative;
+
+        
+    }
+
+}
+
+
+
+.separator {
+    position: relative;
+    padding-bottom: 2rem;
+
+    &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 5px;
+        width: 100%;
+        background-color: v.$bg-100;
     }
 }
