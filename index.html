@@ -30,22 +30,17 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                                 <li class="nav-item text-center">
-                                    <a class="text-white nav-link active" aria-current="page" href="#">Producto</a>
+                                    <a class="text-white nav-link active" aria-current="page" href="#producto">Producto</a>
                                 </li>
                             </ul>
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item text-center">
-                                    <a class="text-white nav-link active" aria-current="page" href="#">Precio</a>
+                                    <a class="text-white nav-link active" aria-current="page" href="#precio">Precio</a>
                                 </li>
                             </ul>
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item text-center">
-                                    <a class="text-white nav-link active" aria-current="page" href="#">Sobre Nosotros</a>
-                                </li>
-                            </ul>
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item text-center">
-                                    <a class="text-white nav-link active mx-auto" aria-current="page" href="#">Contacto</a>
+                                    <a class="text-white nav-link active mx-auto" aria-current="page" href="#contacto">Contacto</a>
                                 </li>
                             </ul>
                         </div>
@@ -65,8 +60,8 @@
                     <p class="text-white">Transforma el tiempo en familia en una experiencia enriquecedora. ¡Empieza hoy y haz que cada momento cuente!</p>
 
                     <div class="button-container mt-5 ">       
-                        <button class="btn btn-primary">¡Ordena Ahora!</button>                     
-                        <button class="btn btn-light">Más Información</button>                                                         
+                        <button class="btn btn-primary form">¡Ordena Ahora!</button>                     
+                        <button class="btn btn-light info">Más Información</button>                                                         
                     </div>
                 </div>
             </div>
@@ -75,7 +70,7 @@
 
     <section class="producto-section section">
         <div class="row">
-            <h2 class="text-center">Producto y Servicio</h2>
+            <h2 id="producto" class="text-center">Producto y Servicio</h2>
         </div>
 
         <div class="contenedor row mb-5">
@@ -83,7 +78,7 @@
                 <h3>Descubre una nueva forma de crear recuerdos familiares</h3>
                 <p>Transforma los álbumes convencionales con nuestra aplicación amigable e interactiva, diseñada para dispositivos móviles. Descubre actividades para realizar en familia.</p>
                 <div class="button-container mt-5 ">       
-                    <button class="btn btn-primary">Planes</button>                                                      
+                    <button class="btn btn-primary order">Planes</button>                                                      
                 </div>
             </div>
             <div class="producto-imagen col-sm-12 col-lg-6 mt-5 mt-sm-5 mt-lg-0">
@@ -102,7 +97,7 @@
                 <h3 class="mt-5">Crea y comparte recuerdos</h3>
                 <p>Nuestra misión es impulsar a las familias a salir de su rutina diaria. Documenta las actividades con fotografías y súbelas a la plataforma para llenar tu álbum digital.</p>
                 <div class="button-container mt-5 offset-auto">       
-                    <button class="btn btn-light">Planes</button>                                                      
+                    <button class="btn btn-light order">Planes</button>                                                      
                 </div>
             </div>         
         </div>
@@ -125,7 +120,7 @@
                     </ul>
                 </div>
                 <div class="button-container mt-5 ">       
-                    <button class="btn btn-primary">Planes</button>                                                      
+                    <button class="btn btn-primary order">Planes</button>                                                      
                 </div>
             </div>
             <div class="producto-imagen col-sm-12 col-lg-6 mt-5 mt-sm-5 mt-lg-0">
@@ -136,11 +131,11 @@
 
     <section class="planes-section section row">
         <div class="row">
-            <h2 class="text-center">Planes y Precios</h2>
+            <h2 id="precio" class="text-center">Planes y Precios</h2>
         </div>
 
         <div class="contenedor">
-            <div class="card-group">
+            <div id="planes" class="card-group">
                 <div class="card-plan">
                     <div class="card-texto">
                         <h3>Plan Básico</h3>
@@ -186,7 +181,7 @@
     
                     <div class="card-precio">
                         <p class="precio">$5.99</p>
-                        <button class="card-precio__boton btn btn-primary">Adquirir</button>
+                        <button class="card-precio__boton btn btn-primary form plan-basico">Adquirir</button>
                     </div>
                 </div>
     
@@ -229,7 +224,7 @@
                     <div class="card-precio">
                         <p class="precio">$20.00</p>
                         <p class="precio__detalles">en el primer pago, despues solo $5.99</p>
-                        <button class="card-precio__boton btn btn-primary">Adquirir</button>
+                        <button class="card-precio__boton btn btn-primary form plan-premium">Adquirir</button>
                     </div>
                 </div>
             </div>
@@ -240,7 +235,7 @@
     <section class="section form-section">
         <div class="row">
             <div class="form-container">
-                <h2>Ingresa tu información</h2>
+                <h2 id="contacto">Ingresa tu información</h2>
                 <p>Ayudanos validando tu interes en nuestro producto</p>
 
                 <div id="alertas"></div>
@@ -273,8 +268,8 @@
                             <label class="form-label" for="form-select">Seleccione un plan</label>
                             <select class="form-select" name="plan" id="form-select" aria-label="Default select example">
                                 <option value="0" selected disabled>--Seleccione una opción--</option>
-                                <option value="1">Plan 1</option>
-                                <option value="2">Plan 2</option>
+                                <option value="1">Plan Básico</option>
+                                <option value="2">Plan Premium</option>
                             </select>
                         </div>
                     </div>

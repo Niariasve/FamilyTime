@@ -5,6 +5,7 @@ let planes = {
 
 let loaded = () => {
     formularioEventListener();
+    buttonsEventListeners();
 }
 
 function formularioEventListener() {
@@ -74,6 +75,33 @@ function mostrarExito() {
     `
 
     alertas.innerHTML = template;
+}
+
+function scrollButtons() {
+    let botonesForm = document.querySelectorAll('.form');
+    let botonesInfo = document.querySelectorAll('.order');
+
+    // console.log(botonesForm);
+    botonesForm.forEach(boton => {
+        boton.addEventListener('click', function() {
+            document.getElementById('formulario').scrollIntoView({behavior: "smooth"})
+        })
+    })
+
+    botonesInfo.forEach(boton => {
+        boton.addEventListener('click', function() {
+            document.getElementById('precio').scrollIntoView({behavior: "smooth"})
+        })
+    })
+
+    let masInfo = document.querySelector('.info');
+    masInfo.addEventListener('click', function() {
+        document.getElementById('producto').scrollIntoView({behavior: "smooth"})
+    })
+}
+
+function buttonsEventListeners() {
+    scrollButtons();
 }
 
 
