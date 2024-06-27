@@ -38,15 +38,42 @@ function formularioEventListener() {
 
         if(errores.length === 0) {
             mostrarExito();
-            let datos = {
-                nombre: nombre,
-                apellido: apellido,
-                correo: correo,
-                plan: plan
-            }
+            guardarObjecto(nombre, apellido, correo, plan);
         } else {
             mostrarErrores(errores);
         }
+    })
+}
+
+function guardarObjecto(nombre, apellido, contrasena, plan) {
+
+    datos = {
+        nombre: nombre,
+        apellido: apellido,
+        contrasena: contrasena,
+        plan: plan
+    }
+    console.log(datos)
+
+    fetch('https://familytimeapp-default-rtdb.firebaseio.com/collection.json', {
+        method: 'POST',
+        body: JSON.stringify(datos),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(respuesta => {
+        if(!respuesta.ok) {
+            throw new Error('Error en la respuesta del servidor', respuesta.status);
+        }
+        console.log(respuesta.status)
+        return respuesta.json();
+    })
+    .then(datos => {
+        console.log(datos)
+    })
+    .catch(error => {
+        console.error();
     })
 }
 
